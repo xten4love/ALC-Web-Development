@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title>Contacts</title> 
+<link rel="stylesheet" type="text/css" href="addressbk.css"> 
+</head>
+<body>
+<h1>My Address Book</h1> 
+<form id="contacts-form">
+    <div class="item text">
+        <label>First name:</label>
+        <div class="field">
+            <input type="text" name="first_name" />
+        </div>
+        <label>Last name:</label>
+        <div class="field"><input type="text" name="last_name" /></div>
+    </div>
+    <div class="item text">
+        <label>Phone Number:</label>
+        <div class="field"><input type="Number" name="phone_number" /></div>
+        <label>Email:</label>
+        <div class="field"><input type="text" name="email" /></div>
+    </div>
+   
+    <div class="button-wrapper">
+        <div class="item button">
+            <div class="field"><input type="button" id="contacts-op-discard" value="Delete" /></div>
+        </div>
+        <div class="item button button-default">
+            <div class="field"><input type="submit" id="contacts-op-save" value="Add/Save" /></div>
+        </div>
+    </div>
+    <input type="hidden" name="id_entry" value="0" />
+</form>
+<table id="contacts-table">
+	<tbody>
+		<tr id="contacts-head">
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Actions</th>
+    	</tr>
+	</tbody>
+</table>
+<script type="text/javascript" src="addressbk.js">
+</script> 
+</body>
+</html>
